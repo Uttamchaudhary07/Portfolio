@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const page=fs.readFileSync('app/page.tsx','utf8');
+const required=['id="top"','id="thinking"','id="work"','id="stack"','id="perso"','id="contact"','https://emplo-salary.vercel.app/','https://github.com/Uttamchaudhary07/emploSalary','https://facerecognition.sagarjaiswal.dev/','https://github.com/Uttamchaudhary07','https://www.linkedin.com/in/uttamchaudhary07/','mailto:uttamchaudhary020@gmail.com'];
+for(const x of required) assert(page.includes(x),`Missing connection: ${x}`);
+const ids=[...page.matchAll(/id="([^"]+)"/g)].map(m=>m[1]);
+for(const href of [...page.matchAll(/href="(#.*?)"/g)].map(m=>m[1])) assert(ids.includes(href.slice(1)),`Broken internal anchor: ${href}`);
+assert(page.includes("'use client'"),'Client component missing');
+assert(fs.existsSync('app/globals.css'),'globals.css missing');
+console.log(`PASS: ${required.length} required connections present; ${ids.length} section ids found.`);
