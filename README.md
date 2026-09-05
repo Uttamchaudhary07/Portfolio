@@ -2,7 +2,7 @@
 
 Premium single-page portfolio for **Uttam Chaudhary — AI & Software Developer**.
 
-## v0.1 scope
+## v2.0 scope
 - Responsive single-page experience
 - Hero / Why I Build / Selected Work / Stack / Perso / Contact
 - Warm editorial + technical visual language
