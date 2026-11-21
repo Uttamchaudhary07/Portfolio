@@ -1,13 +1,208 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uttam Chaudhary — Software & AI Developer</title>
+  <meta name="description" content="Uttam Chaudhary builds thoughtful software, full-stack products, and applied AI systems.">
+  <meta name="theme-color" content="#241711">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23241711'/%3E%3Cpath d='M17 18v18c0 9 5 14 15 14s15-5 15-14V18h-8v18c0 5-2 7-7 7s-7-2-7-7V18z' fill='%23f2e7da'/%3E%3Ccircle cx='49' cy='18' r='4' fill='%23c9875b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <header class="nav-wrap">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Uttam Chaudhary, home">UC<span>.</span></a>
+      <div class="nav-links">
+        <a href="#work">Work</a><a href="#process">Approach</a><a href="#about">Profile</a><a href="#lab">In the lab</a>
+      </div>
+      <a class="nav-cta" href="mailto:uttamchaudhary020@gmail.com">Let’s talk</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <aside class="hero-object reveal" aria-label="Profile photograph and key numbers">
+        <div class="photo-space" aria-label="Reserved space for a profile photograph"></div>
+        <p class="photo-intro">I’m Uttam — a Computer Science undergraduate building practical full-stack software and applied AI systems, from clean APIs to useful interfaces.</p>
+        <dl class="quick-stats">
+          <div><dt>8.5</dt><dd>CGPA / 10</dd></div>
+          <div><dt>80+</dt><dd>DSA problems</dd></div>
+          <div><dt>4,800+</dt><dd>Movies modeled</dd></div>
+        </dl>
+      </aside>
+      <div class="hero-copy reveal">
+        <p class="availability"><span aria-hidden="true"></span>Available for software engineering internships</p>
+        <p class="eyebrow"><span>Software + AI developer</span><span>Bengaluru, India</span></p>
+        <h1>Curious about technology.<br><em>Obsessed with building.</em></h1>
+        <p class="intro">I build full-stack applications and applied AI systems, with a focus on backend architecture, REST APIs, authentication, data modeling, and interfaces that make complex workflows easier to use.</p>
+        <dl class="hero-details">
+          <div><dt>Current</dt><dd>B.Tech CSE, Artificial Intelligence</dd></div>
+          <div><dt>Focus</dt><dd>Software development · Full-stack engineering</dd></div>
+          <div><dt>Core stack</dt><dd>JavaScript · Python · React · Node.js</dd></div>
+        </dl>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore selected work</a>
+          <a class="button quiet" href="assets/Uttam-Chaudhary-Resume.pdf" download>Download résumé</a>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span> Scroll to explore</div>
+    </section>
+
+    <section class="statement band">
+      <div class="shell statement-grid reveal">
+        <p class="section-label">01 / Point of view</p>
+        <h2>I like understanding how things work—<em>then building something better.</em></h2>
+        <p>Computer Science undergraduate specializing in AI, focused on the engineering underneath products: clear data models, reliable APIs, secure access, and interfaces that make the hard parts feel simple.</p>
+      </div>
+    </section>
+
+    <section id="work" class="work shell section-pad">
+      <div class="section-head reveal">
+        <p class="section-label">02 / Selected work</p>
+        <h2>Built around the problem,<br><em>measured by the detail.</em></h2>
+      </div>
+
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project-index">01</div>
+          <div class="project-main">
+            <p class="project-kind">Computer vision · Identity</p>
+            <h3>Smart Attendance</h3>
+            <p>A lightweight, web-based attendance system using face-api.js for real-time face detection and recognition, with liveness checks before identity verification and attendance logging.</p>
+            <dl class="project-details">
+              <div><dt>Platform</dt><dd>Built for the web to keep deployment lightweight and access simple.</dd></div>
+              <div><dt>Recognition</dt><dd>face-api.js handles real-time detection and face matching in the browser.</dd></div>
+              <div><dt>Security</dt><dd>Liveness detection helps prevent photo-based spoofing before attendance is recorded.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Technologies"><li>JavaScript</li><li>face-api.js</li><li>MERN</li><li>Liveness detection</li></ul>
+          </div>
+          <div class="metric"><strong>WEB</strong><span>lightweight<br>liveness enabled</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">02</div>
+          <div class="project-main">
+            <p class="project-kind">Machine learning · Salary intelligence</p>
+            <h3>EMPLO Salary</h3>
+            <p>An interactive salary intelligence platform that compares regression approaches, estimates expected compensation, and translates company structures into an in-hand salary view.</p>
+            <dl class="project-details">
+              <div><dt>Dataset</dt><dd>Built around 100K synthetic salary records.</dd></div>
+              <div><dt>Modeling</dt><dd>Compares regression approaches before selecting a model.</dd></div>
+              <div><dt>Output</dt><dd>Expected salary and estimated in-hand compensation views.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Technologies"><li>Python</li><li>Regression</li><li>React</li></ul>
+          </div>
+          <div class="metric"><strong>100K</strong><span>synthetic records<br>95% stated accuracy</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">03</div>
+          <div class="project-main">
+            <p class="project-kind">Graph systems · Recommendations</p>
+            <h3>Movie Recommendation Engine</h3>
+            <p>A graph-based recommender that models users and movies as a bipartite network, then uses connectivity patterns to produce personalized results.</p>
+            <dl class="project-details">
+              <div><dt>Graph</dt><dd>Users and 4,800+ movies modeled as a bipartite network.</dd></div>
+              <div><dt>Logic</dt><dd>Recommendations generated from graph connectivity patterns.</dd></div>
+              <div><dt>Delivery</dt><dd>Backend functionality implemented with Flask.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Technologies"><li>Python</li><li>Graph theory</li><li>Flask</li></ul>
+          </div>
+          <div class="metric"><strong>4.8K+</strong><span>movies in<br>the network</span></div>
+        </article>
+      </div>
+
+      <div class="more-work subgen-feature reveal">
+        <div class="more-work-head"><p class="section-label">Currently building</p><p>An AI workflow focused on turning raw audio into usable, synchronized subtitles.</p></div>
+        <article>
+          <span>04 / AI subtitle workflow</span><h3>SubGen</h3>
+          <p>SubGen explores the complete subtitle pipeline: audio processing, speech recognition, transcription, subtitle generation, and timestamp synchronization, with particular attention to reducing unnecessary latency.</p>
+          <dl class="subgen-details"><div><dt>Input</dt><dd>Audio processing and speech recognition</dd></div><div><dt>Pipeline</dt><dd>Transcription and subtitle generation</dd></div><div><dt>Output</dt><dd>Synchronized subtitle files</dd></div></dl>
+          <small>Python · AI · Speech recognition · Audio processing</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="process shell section-pad">
+      <div class="section-head reveal">
+        <p class="section-label">03 / How I build</p>
+        <h2>From a useful question<br><em>to a working system.</em></h2>
+      </div>
+      <ol class="process-grid reveal">
+        <li><span>01</span><h3>Understand</h3><p>Define the user, workflow, inputs, and the problem the software needs to remove.</p></li>
+        <li><span>02</span><h3>Structure</h3><p>Map the data model, API boundaries, access roles, and important system states.</p></li>
+        <li><span>03</span><h3>Build</h3><p>Implement the core path, connect the interface, and keep responsibilities clear.</p></li>
+        <li><span>04</span><h3>Verify</h3><p>Test the main flow, edge cases, security assumptions, and the final user experience.</p></li>
+      </ol>
+    </section>
+
+    <section id="about" class="about band">
+      <div class="shell section-pad">
+        <div class="section-head reveal">
+          <p class="section-label">04 / Engineering profile</p>
+          <h2>Thinking in systems.<br><em>Shipping in layers.</em></h2>
+        </div>
+        <div class="capability-grid reveal">
+          <article><p class="skill-label"><span>01</span> Languages</p><ul><li>Java</li><li>JavaScript</li><li>Python</li></ul></article>
+          <article><p class="skill-label"><span>02</span> Application</p><ul><li>React</li><li>Node.js</li><li>Express</li><li>HTML + CSS</li></ul></article>
+          <article><p class="skill-label"><span>03</span> Data & APIs</p><ul><li>MongoDB</li><li>MySQL</li><li>REST APIs</li><li>JWT Auth</li></ul></article>
+          <article><p class="skill-label"><span>04</span> Foundations</p><ul><li>Data Structures</li><li>OOP</li><li>DBMS</li><li>Operating Systems</li></ul></article>
+        </div>
+        <div class="education reveal">
+          <div><p class="section-label">Education</p><h3>B.Tech, Computer Science & Engineering</h3><p>Specialization in Artificial Intelligence</p></div>
+          <div class="education-meta"><strong>2023—2027</strong><span>Jain (Deemed-to-be) University<br>Bengaluru, India</span></div>
+          <div class="education-score"><strong>8.5</strong><span>CGPA / 10</span></div>
+        </div>
+        <div class="profile-notes reveal">
+          <div><span>Coursework</span><strong>Data Structures & Algorithms · OOP · DBMS · Operating Systems</strong></div>
+          <div><span>Practice</span><strong>80+ problems solved on LeetCode</strong></div>
+          <div><span>Direction</span><strong>Software development and full-stack engineering internships</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lab" class="lab shell section-pad">
+      <div class="lab-card reveal">
+        <p class="section-label">05 / In development</p>
+        <div class="lab-title"><span>Project<br>signal</span><h2>PERSO</h2></div>
+        <div class="lab-copy">
+          <h3>What if your computer didn’t just respond to you, but understood your world?</h3>
+          <p>A quiet hint at what comes next: a personal AI system exploring context, memory, reasoning, and action.</p>
+        </div>
+        <ol class="signal-path">
+          <li><span>01</span>Context</li><li><span>02</span>Memory</li><li><span>03</span>Reasoning</li><li><span>04</span>Action</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="contact band">
+      <div class="shell contact-grid reveal">
+        <div class="contact-intro">
+          <p class="section-label">06 / Contact</p>
+          <h2>Let’s build<br><em>something useful.</em></h2>
+          <p>Open to software development, full-stack engineering, and applied AI opportunities.</p>
+        </div>
+        <div class="contact-list" aria-label="Contact links">
+          <a href="mailto:uttamchaudhary020@gmail.com"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span><span class="contact-meta"><small>Email</small><strong>uttamchaudhary020@gmail.com</strong></span></a>
+          <a href="https://www.linkedin.com/in/uttamchaudhary07/" target="_blank" rel="noreferrer"><span class="contact-icon brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span><span class="contact-meta"><small>LinkedIn</small><strong>Uttam Chaudhary</strong></span></a>
+          <a href="https://github.com/Uttamchaudhary07" target="_blank" rel="noreferrer"><span class="contact-icon brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span><span class="contact-meta"><small>GitHub</small><strong>@Uttamchaudhary07</strong></span></a>
+          <a href="https://leetcode.com/u/Uttamchaudhary/" target="_blank" rel="noreferrer"><span class="contact-icon brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg></span><span class="contact-meta"><small>LeetCode</small><strong>@Uttamchaudhary</strong></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <div><strong>Uttam Chaudhary</strong><span>Software · AI · Systems</span></div>
+    <div class="socials"><a href="https://github.com/Uttamchaudhary07" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/uttamchaudhary07/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:uttamchaudhary020@gmail.com">Email</a></div>
+    <span>© 2026</span>
+  </footer>
+</body>
 </html>
